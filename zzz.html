@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+
+    <link rel="icon" type="image" href="download.png">
+    <style>
+        .navbar {
+            background-color: black;
+            height: 35px;
+            opacity: 1;
+            border-radius: 20px;
+            border: 5px solid beige;
+
+
+        }
+
+        .navbar:hover {
+            border-color: red;
+        }
+
+        li {
+            display: inline-block;
+            cursor: pointer;
+            margin: -8px 15px;
+            /* z-index: -1; */
+            opacity: 1;
+            /* font-weight: bold; */
+            float: right;
+        }
+
+        .x {
+            margin-top: 30vh;
+            margin-left: 0px;
+            /* font-size: 10vw; */
+            font-family: 'Arial', sans-serif;
+            font-size: 5vw;
+            /* Adjust font size for responsiveness */
+            color: black;
+
+            text-transform: capitalize;
+            letter-spacing: 4px;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+        }
+
+
+
+
+        .y {
+            background-color: antiquewhite;
+            width: 32vw;
+            height: 7vh;
+            border: 4px solid black;
+            margin-left: 34vw;
+            cursor: pointer;
+
+            border-radius: 30px;
+        }
+
+        .y:hover {
+            border-color: red;
+            initial-value: none;
+        }
+
+
+        #asearch1 {
+            text-decoration: none;
+            background-color: aliceblue;
+            margin-top: 5vh;
+        }
+
+
+
+
+        #a1 {
+            color: antiquewhite;
+            text-decoration: none;
+            /* font-weight: bold; */
+            z-index: -1;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            /* z-index: -1; */
+
+        }
+
+
+        #a1:hover {
+            color: red;
+            background-color: rgb(238, 232, 232);
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 27.5vh;
+            background-color: black;
+            border: 5px solid beige;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0px;
+
+
+        }
+
+        footer:hover {
+            border-color: red;
+        }
+
+        .anewz {
+            color: rgb(209, 247, 247);
+            text-decoration: none;
+            margin: 0px 10vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-weight: bold; */
+            /* justify-content: center; */
+        }
+
+        .anewz:hover {
+            background-color: black;
+            color: red;
+            border-radius: 12px;
+
+        }
+
+        .timer {
+            display: flex;
+            /* border: 5px solid black; */
+            font-size: 3.2vh;
+            font-weight: bolder;
+            /* margin-bottom: 10px; */
+            float: inline-start;
+            margin-top: 3px;
+            /* border: 2px dotted  rgb(115, 239, 227); */
+            text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.639);
+
+        }
+
+        .customize {
+            display: flex;
+            margin-top: 7px;
+            float: inline-end;
+            flex-direction: row;
+            justify-self: flex-end;
+            margin-bottom: 7px;
+            border: 5px rgb(255, 255, 255) solid;
+            border-radius: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-size: large;
+            text-align: center;
+            background-image:linear-gradient(90deg,rgb(243, 72, 10),skyblue);
+
+            color: #ffffff;
+
+
+
+        }
+
+        .customize:hover {
+            cursor: pointer;
+
+        }
+
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1472313420546-a46e561861d8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHNvdXJjZXxlbnwwfHwwfHx8MA%3D%3D');
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+            text-justify: distribute;
+            opacity: 5px;
+           
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+
+    <div style="display: flexbox; width:100% ;">
+
+
+        <div>
+            <header>
+                <nav class="navbar">
+
+                    <ul>
+
+                        <li class=""><a id="a1" href="zgame.html">Offline game</a></li>
+                        <li class=""><a id="a1" href="https://Gmail.com" alt="Gmail">Gmail</a></li>
+                        <li class=""><a id="a1" href="https://google.com" alt="Gmail">Image</a></li>
+                        <li class=""><a id="a1" href="https://weather.com/en-IN">Weather</a> </li>
+
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+
+
+
+        <div class="timer">
+            <script>
+                let a = new Date();
+                document.write(a);
+                console.log(a);
+
+
+
+            </script>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="x" align="center">
+            <font color="darkred">I</font>nfo<font color="darkred">P</font>lus
+
+
+
+        </div>
+
+        <input class="y" type="text" value="">
+
+
+
+
+        <!-- <ul style="cursor: pointer;">
+                <select>
+                <li>
+                    <option>Search or type URL</option>
+                </li>
+                <li>
+                    <option><a href="https://google.com">css</a></option>
+                </li>
+                <li>
+                    <option><a href="https://google.com">html program</a></option>
+                </li>
+                <li>
+                    <option><a href="https://google.com">Projects</a></option>
+                </li>
+                <li>
+                    <option><a href="https://google.com">learnings.css</a></option>
+                </li>
+                <li>
+                    <option><a href="https://google.com">python</a></option>
+                </li>
+
+            </ul> 
+             
+
+        </select> -->
+    </div>
+
+
+
+
+    <div align="center"
+        style="padding: 2vw; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">
+        InfoPlus is offered in
+
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop">hindi</a>
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop"> বাংলা</a>
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop">తెలుగు</a>
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop">मराठी</a>
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop">ગુજરાતી</a>
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop">தமிழ்</a>
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop">ગુજરાતી</a>
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop"> ಕನ್ನಡ </a>
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop">മലയാളം</a>
+        <a href="https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop">ਪੰਜਾਬੀ</a>
+    </div>
+
+
+
+    <div>
+
+
+        <footer>
+
+            <a class="anewz" href="https://www.hindustantimes.com/">TODAY'S NEWZ</a>
+            <a class="anewz"
+                href="https://www.msn.com/en-in/money/cryptocurrencies?id=c2111&ocid=winp2fptaskbar&cvid=d75b924c17394eec92e99178b19dcecb&ei=14&duration=1D">CHECK
+                OUT MARKET TRENDS </a>
+
+
+
+        </footer>
+        
+        <input   onclick="changeBackgroundColor()" id="btn" class="customize" value="Customize InfoPlus" type="button">
+        
+
+        
+          
+
+
+       
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        
+        
+        alert(`                         <---  WELL-COME TO OUR PROJECT  --->       ` + '\n' + '\n' + '\n' + 'By :-' + '\n' + 'DEEPAK SHARMA ( `Group Leader` )' + '\n' + 'CHIRAYU ( `Team Mate` )' + '\n' + 'DAKSH ( `Team Mate` )' + '\n' + '\n' + 'Please Click `OK` If You Have Read Above Information.')
+
+
+
+
+        function changeBackgroundColor() {
+    // Prompt the user for a color input
+    var userColor = prompt('Enter a color (name or hex code):');
+
+    // Check if the user entered a color
+    if (userColor !== null && userColor !== '') {
+      // Set the background color of the body
+      document.body.style.backgroundColor = userColor;
+    }
+  }
+
+
+        
+            
+
+
+
+            
+            
+       
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

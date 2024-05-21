@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            background-image: url('zldaLS.jpg');
+            height: 88vh;
+            width: 15vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+            text-justify: distribute;
+           
+
+        }
+
+        div {
+            display: flex;
+            height: 55vh;
+            width: 55vw;
+            border: 7px solid rgb(0, 0, 0);
+            justify-content: center;
+            text-align: center;
+            text-shadow: 10 10;
+            padding-top: 10vh;
+            text-transform: capitalize;
+            font-size: 5vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 25px;
+            justify-self: center;
+            margin-top: 13vh;
+            margin-left: 23vw;
+            
+           
+
+
+
+
+
+        }
+
+        
+    </style>
+</head>
+
+<body bgcolor="chartreuse">
+    <div class="box">
+
+        <script>
+                       alert(`   <--- WELL-COME TO SNAKE(s) ,WATER(w) OR GUN(g) GAME --->  `+ '\n' + '\n' +'RULES :- ' +'\n'+'FIRST IS COMPUTER TURN: SNAKE(s) ,WATER(w) OR GUN(g) ' +'\n'+'NEXT IS YOUR TURN: SNAKE(s) ,WATER(w) OR GUN(g)  ')
+                       
+                function game(comp, your_turn) {
+
+                if (comp == your_turn) {
+                    document.write("There's an tie !" + '<br>')
+                }
+                else if (comp == 's' & your_turn == 'w') {
+                    document.write("Opps! You Loosed It." + '<br>')
+                }
+
+                else if (comp == 's' & your_turn == 'g') {
+                    document.write("Great! You won." + '<br>')
+                }
+                else if (comp == 'w' & your_turn == 's') {
+                    document.write("Great! You won." + '<br>')
+                }
+                else if (comp == 'w' & your_turn == 'g') {
+                    document.write("Opps! You Loosed It." + '<br>')
+                }
+                else if (comp == 'g' & your_turn == 's') {
+                    document.write("Opps! You Loosed It." + '<br>')
+                }
+                else if (comp == 'g' & your_turn == 'w') {
+                    document.write("Great! You won." + '<br>')
+                }
+            }
+
+            document.write("comp turn : Snake(s) Water(w) or Gun(g)" + '<br>' + "'Main Nhiee Btaoon Gaa!'" + '<br>')
+            let r = Math.random();
+            let a1 = 1;
+            let b1 = 3;
+            let r1_100 = a1 + (b1 - a1) * Math.random();
+            let f_r1 = Math.round(r1_100)
+            let comp;
+
+
+            if (f_r1 == 1) {
+                comp = "s"
+            }
+            else if (f_r1 == 2) {
+                comp = "g"
+            }
+            else if (f_r1 == 3) {
+                comp = "w"
+            }
+
+            // document.write(comp)
+            your_turn = prompt()
+            document.write(`Computer choosen : ${comp}` + '<br>')
+            document.write(`You choosen : ${your_turn}` + '<br>')
+
+            game(comp, your_turn)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </div>
+</body>
+
+</html>
